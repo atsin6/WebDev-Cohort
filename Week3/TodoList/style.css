@@ -1,0 +1,88 @@
+.inter-InterSerif-Font{
+  font-family: "Inter", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+html, body {
+  /* font-size: 16px; */
+  width: 100%;
+  line-height: 1.7;
+}
+body {
+  /* padding-top: 50px; */
+  color: #424242;
+  /* color: rgb(24, 23, 23); */
+  min-width: 350px;
+  background-color: whitesmoke;
+  /* max-width: 500px; */
+}
+
+/* Navbar */
+nav{
+    color: #232323;
+    background-color: rgb(30, 155, 227);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 15vh;
+    align-items: center;
+}
+nav #title h1{
+    font-size: 50px;
+}
+
+/* Todo List Content */
+.btns-div{
+  display: flex;
+  gap: 10px;
+}
+#todos{
+    padding: 0px 50px;
+    font-size: 20px;
+    font-weight: 100;
+}
+#add-todo{
+    padding: 0px 50px;
+}
+
+.todo-div{
+    display: flex;
+    justify-content: space-between;
+    /* height: 30px; */
+    /* width: 100%; */
+    margin: 10px;
+    padding: 0px 20px;
+}
+#btn{
+    /* background-color: #808080;  */
+    /* color: white;  */
+    height: 25px;
+    padding: 0px 20px; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    align-self: center;
+}
+
+#add-todo-btn{
+    height: 25px;
+    padding: 0px 10px; 
+    border: 2px solid black; 
+    border-radius: 5px;
+    align-self: center;
+}
+
+input{
+    height: 25px;
+    padding: 0px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    margin-right: 10px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Todo App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="inter-InterSerif-Font">
+    <!-- <video autoplay muted loop playsinline style="width: 100%; height: auto;">
+        <source src="banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+    <nav>
+        <div id="title">
+            <h1>ToDo.</h1>
+        </div>
+        <!-- <div id="clock">
+            <h4 id="time"></h4>
+        </div> -->
+    </nav>
+
+    <div>
+        <div id="todos">
+            <div class="todo-container-1 todo-div">
+                <h4 class="todo todo-1">1. Watch Cohort classes</h4>
+                <div class="btns-div">
+                    <button id="btn" onclick="editTodo(1)">edit</button>
+                    <button id="btn" onclick="deleteTodo(1)">delete</button>
+                </div>
+            </div>
+            <div class="todo-container-2 todo-div">
+                <h4 class="todo todo-2">2. Go to Gym</h4>
+                <div class="btns-div">
+                    <button id="btn" onclick="editTodo(2)">edit</button>
+                    <button id="btn" onclick="deleteTodo(2)">delete</button>
+                </div>
+            </div>
+            <div class="todo-container-3 todo-div">
+                <h4 class="todo todo-3">3. Eat Protien</h4>
+                <div class="btns-div">
+                    <button id="btn" onclick="editTodo(3)">edit</button>
+                    <button id="btn" onclick="deleteTodo(3)">delete</button>
+                </div>
+            </div>
+            <div class="todo-container-4 todo-div">
+                <h4 class="todo todo-4">4. Complete Assignments</h4>
+                <div class="btns-div">
+                    <button id="btn" onclick="editTodo(4)">edit</button>
+                    <button id="btn" onclick="deleteTodo(3)">delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="add-todo">
+            <input id="add-todo-input" type="text" placeholder="Add your todo here"></input>
+            <button id="add-todo-btn" onclick="addTodo()">Add Todo</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

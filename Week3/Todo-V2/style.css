@@ -1,0 +1,144 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+html, body {
+  /* font-size: 16px; */
+  width: 100%;
+  line-height: 1.7;
+}
+body {
+  /* padding-top: 50px; */
+  font-family: 'Quicksand', sans-serif;
+  
+  color: #101916;
+  min-width: 350px;
+  background-color: #355245;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+nav h1{
+    font-size: 50px;
+    color: #AFC1B6;
+}
+
+#todos{
+    width: 50vw;
+    height: 50vh;
+    min-width: 250px;
+    background-color: #E3E5D8;
+    /* border: 2px solid #AFC1B6; */
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.todo-div{
+    /* background-color: rgb(6, 57, 57); */
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+
+}
+
+label{
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+#btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 10px;
+    /* background-color: #E3E5D8; */
+
+}
+
+#btn-div button{
+    background-color: transparent;
+    border: none;
+
+    /* border-radius: 50%; */
+    /* display: flex;
+    justify-content: space-center;
+    align-items: center; */
+    /* font-size: 16px; */
+    /* margin: 5px; */
+    /* padding: 2px 5px;  */
+}
+
+#input-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    /* width: 50vw; */
+    /* height: 10vh; */
+    /* min-width: 250px; */
+    background-color: #E3E5D8;
+    border-radius: 20px;
+
+    margin: 10px auto;
+    padding: 3px 10px;
+}
+
+.input-ele{
+    background-color: #AFC1B6;
+    /* border: 2px solid; */
+    border-radius: 20px;
+    width: 47vw;
+
+
+    margin: 10px auto;
+    padding: 2px;
+}
+
+#input-div button{
+    background-color: #AFC1B6;
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+
+    display: flex;
+
+    /* margin: 10px auto; */
+    /* padding: 2px; */
+}
+
+
+
+/* -------------------- */
+.todo-div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
+
+.btn-img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #AFC1B6;
+    /* margin-right: 5px; */
+}
+
+input[type="checkbox"] {
+  accent-color: #101916; /* ✅ Changes checkbox checkmark and fill color */
+}

@@ -1,0 +1,1 @@
+Count the words of string and display the number on console.

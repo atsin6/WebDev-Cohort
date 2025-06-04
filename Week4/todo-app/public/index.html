@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <h1>Todo.</h1>
+        </nav>
+        <div id="todos">
+            <div id="todo-div-0" class="todo-div">
+                <label id="todo-label-0" for="todo-0">
+                    <input type="checkbox" id="todo-0" checked>
+                    <span id="todo-span-0">Make Todo list project.</span>
+                </label>
+                <div id="btn-div">
+                    <button onclick="editTodo(0)">Edit</button>
+                    <button onclick="deleteTodo(0)">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="input-div">
+            <input id="todo-input" type="text"></input>
+            <button onclick="addTodo()">
+                <!-- <img src="add.png" alt="Add Todo!"> -->
+                Add Todo!
+            </button>
+
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

@@ -6,10 +6,9 @@ function time() {
   console.log(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
   setTimeout(time, 1000);
 }
-1;
 time();
 
-let time = new Time();
+// let time = new Time();
 
 // let c = 1;
 // function Counter() {

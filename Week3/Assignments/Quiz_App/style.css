@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+
+    font-family: 'Poppins', sans-serif; /* or 'Rubik', 'Quicksand', etc. */
+}
+
+#homepage{
+    width: 100vw;
+    height: 100vh;
+    /* margin: 20px; */
+    padding: 5% 10%;
+    box-sizing: border-box;
+
+    background-color: #0a0f1f;
+    color:#0a0f1f ;
+}
+#startPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+
+    padding: 2% 5%;
+    box-sizing: border-box;
+    background: #cbd5e1;
+    border: none;
+    border-radius: 12px;
+}
+#title{
+    /* background-color: green; */
+    height: 85%;
+    align-content: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+#startBtnDiv{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-end;
+}
+#startBtn{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#queCard{
+    background: #cbd5e1;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* margin: 5px; */
+}
+
+#queDiv{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+    height: 85%;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* background-color: #fff; */
+}
+#queNoTimerDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#queNo{
+    font-size: xx-large;
+}
+
+#que{
+    font-size: large;
+}
+#options{
+    font-size: large;
+}
+
+
+
+#btnDiv{
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+#nextBtn, #submitBtn, #startAgainBtn{
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+#scoreDiv{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #cbd5e1;
+    gap: 10px;
+}
+
+/* ------------ */
+.btn{
+    
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(10, 15, 31);
+    color: #cbd5e1;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #30a5d6;
+  box-shadow:0 10px 15px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+h1, h2 {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.15);
+}

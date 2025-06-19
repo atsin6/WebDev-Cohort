@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+
+#homepage{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4A90E2;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 3%;
+    box-sizing: border-box;
+    gap: 2%;
+}
+#formBuilderDiv, 
+#formPreviewDiv{
+    flex: 1;
+    background-color: 	#FFFFFF;
+    min-height: 0;
+    padding: 1rem;
+
+    border: hidden;
+    border-radius: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #homepage{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #formBuilderDiv, #formPreviewDiv{
+        height: auto;
+        /* flex: 1; */
+    }
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#LabelforFieldTypeDiv, #SelectFieldTypeDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputEle{
+    background-color: #F5F7FA;
+    padding: 2px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+#LabelforFieldType{
+    padding: 2px 5px;
+}
+
+#formP{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.previewElementDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn{
+    background-color: #4A90E2;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+
+    color: #FFFFFF;
+    width: fit-content; 
+    cursor: pointer;
+}

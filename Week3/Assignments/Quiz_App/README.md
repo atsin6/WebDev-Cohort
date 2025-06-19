@@ -3,6 +3,8 @@
 > Web.Dev. Cohort-3 Week-3 Assignment
 > **"Chalo Quiz Shuru Karte Hai 😄"**
 
+> Please forgive me for my English.
+
 ---
 
 ### Mistakes and Learnings

@@ -1,4 +1,5 @@
 import { Command } from "commander";
+import chalk from "chalk";
 const program = new Command();
 
 function countWords(str) {
@@ -25,10 +26,10 @@ program
     const choice = options.countOnlyWords ? 1 : undefined;
     if (choice === 1) {
       let no_of_words = countWordswithoutNum(str);
-      console.log(no_of_words);
+      console.log(`You have ${chalk.blue(no_of_words)} words in this file.`);
     } else {
       let no_of_words = countWords(str);
-      console.log(no_of_words);
+      console.log(`You have ${no_of_words} words in this file.`);
     }
   });
 

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Atul",
+    "email": "atul2@gmail.com",
+    "password": "$2b$10$TKceV6749Nxtnfy8bDRHD.B1blr4l7h74xde47eRIfjHRHlltAxsu",
+    "username": "atul2",
+    "todos": []
+  },
+  {
+    "name": "Atul",
+    "email": "atul2@gmail.com",
+    "password": "$2b$10$y502a6VWL7Bo7SC845H6wOsZyY3x5icCQ6UY6NpmsylTj4sfHqcju",
+    "username": "atul2",
+    "todos": []
+  },
+  {
+    "name": "Atul",
+    "email": "atsin@gmail.com",
+    "password": "$2b$10$jCfkPlUNXsI/oq83nhknQeHt74gmySZpUZC7opOjsumkdNQmHTTlm",
+    "username": "atsin",
+    "todos": [
+      {
+        "id": "a1b2c3d4",
+        "title": "Complete backend routes",
+        "isDone": false
+      },
+      {
+        "id": "e5f6g7h8",
+        "title": "Practice flute",
+        "isDone": true
+      },
+      {
+        "id": "i9j0k1l2",
+        "title": "Read cohort docs",
+        "isDone": false
+      },
+      {
+        "title": "Practicing Guitar",
+        "isDone": false,
+        "id": "J9sroCvCrcCRiw54fadns"
+      }
+    ]
+  },
+  {
+    "name": "John",
+    "email": "john.doe@example.com",
+    "password": "$2b$10$9CNLLwnryMAuiCZqWN.9VeMtSqRYngg6D3J43gjxYAINeHNCkUJ9.",
+    "username": "john.doe",
+    "todos": []
+  },
+  {
+    "name": "Jane",
+    "email": "jane.doe@example.com",
+    "password": "$2b$10$/yBOeJCuZmpvgT3rsSV7OeCcXevh5pbk2DEC3ego4defoGwbZda8G",
+    "username": "jane.doe",
+    "todos": []
+  },
+  {
+    "name": "Sam",
+    "email": "sam.dev@example.com",
+    "password": "$2b$10$E/W2hQ4tuOvD6SC9xg0xNOxbkTkxIjl6ihlTH.4Mu988qaO73b152",
+    "username": "sam.dev",
+    "todos": []
+  }
+]

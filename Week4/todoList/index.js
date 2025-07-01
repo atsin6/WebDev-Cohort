@@ -8,10 +8,12 @@ const port = process.env.PORT;
 const todoRoutes = require("./Backend/routes/todo");
 const userRoutes = require("./Backend/routes/user");
 const checkLogin = require("./Backend/middleware/user.js");
+const ratelimitter = require("./Backend/middleware/ratelimitter.js");
 
 app.use(express.json());
 app.use("/user", userRoutes);
-app.use("/todos", checkLogin, todoRoutes);
+// app.use("/", ratelimitter);
+app.use("/todos/:userId", checkLogin, todoRoutes);
 
 // rout handlers
 app.get("/healthy", (req, res) => res.send("I am Healthy"));

@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const router = Router();
-const { nanoid } = require("nanoid");
 const bcrypt = require("bcryptjs");
+const { nanoid } = require("nanoid");
 
 let { users, readUsers, writeUsers } = require("../database/index.js");
 const {
@@ -18,7 +18,8 @@ const {
 
 router.post("/signup", async (req, res) => {
   let userSignupData = req.body;
-  let email = userSignupData.email; // why this email shows undefined? I already used express json middleware in index.js file.
+  let email = userSignupData.email;
+
   users = readUsers();
   if (users.find((user) => user.email === email)) {
     res.status(409).json({ message: `${email} already exist.` });
@@ -26,6 +27,7 @@ router.post("/signup", async (req, res) => {
 
   let username = userSignupData.email.split("@")[0];
   userSignupData.username = username;
+  userSignupData.id = nanoid();
 
   let todo = [];
   userSignupData.todo = todo;
@@ -62,14 +64,15 @@ router.post("/login", async (req, res) => {
   try {
     users = readUsers();
     let user = await users.find((user) => user.email === email);
+    let userId = user.id;
 
     const storedHashedPassword = user.password;
     const isMatch = await bcrypt.compare(password, storedHashedPassword);
 
-    const sessionCheck = isSessionExist(email);
+    const sessionCheck = isSessionExist(userId);
 
     if (isMatch && !sessionCheck) {
-      setLoggedInUser(email);
+      setLoggedInUser(userId);
       res.status(200).send({ message: "Login successful!" });
     } else if (isMatch && sessionCheck) {
       res.status(200).send({ message: "You are already loggedIn!" });
@@ -82,12 +85,12 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.post("/logOut", (req, res) => {
-  let email = req.body.email;
+router.post("/logOut/:userId", (req, res) => {
+  let userId = req.params.userId;
 
   try {
-    if (isSessionExist(email)) {
-      setLoggedOutUser(email);
+    if (isSessionExist(userId)) {
+      setLoggedOutUser(userId);
       res.status(200).send({ message: "LogOut successful!" });
     } else {
       res.status(400).send({ message: "You are not loggedIn!" });

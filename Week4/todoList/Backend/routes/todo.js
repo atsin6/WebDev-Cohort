@@ -33,6 +33,7 @@ router.put("/:todoId", (req, res) => {
 
   // todos.find((todo) => todo.id === todoId).title = updateInfo.title;
   let todo = todos.find((todo) => todo.id === todoId);
+  console.log("Todo: ", todo);
   if (todo) {
     todos.find((todo) => todo.id === todoId).title = updateInfo.title;
     todos.find((todo) => todo.id === todoId).isDone = updateInfo.isDone;
@@ -47,7 +48,7 @@ router.put("/:todoId", (req, res) => {
 
 // delete all todos
 router.delete("/deleteAll", (req, res) => {
-  req.users.todos = [];
+  req.user.todos = [];
   writeUsers();
   res.status(200).json({ message: "All Todos deleted" });
 });

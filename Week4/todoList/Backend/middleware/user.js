@@ -2,7 +2,9 @@ const { getLoggedInUser } = require("../utils/session.js");
 let { readUsers } = require("../database/index.js");
 
 function checkLogin(req, res, next) {
-  const email = getLoggedInUser();
+  let userId = req.params.userId;
+  const user = getLoggedInUser(userId);
+  let email = user.email;
   if (!email) {
     return res.status(401).send("You must be logged in");
   }

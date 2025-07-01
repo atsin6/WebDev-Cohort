@@ -74,6 +74,17 @@
     "password": "$2b$10$2UeMdAUAFy87FFi/oKBdhOnOoHZXutzM7Sw.vXFmi.OvA7g7QNWAi",
     "username": "Harkirat",
     "id": "MJJithwLcGPW_KGEGd_RJ",
-    "todos": []
+    "todos": [
+      {
+        "title": "Creating video on Promises and Async JS",
+        "isDone": false,
+        "id": "fT6dNvLdHzYmemWvStaRi"
+      },
+      {
+        "title": "Meeting for marketing for 100xDevs",
+        "isDone": false,
+        "id": "j7NwhfMnVbhq6giiVyDWp"
+      }
+    ]
   }
 ]

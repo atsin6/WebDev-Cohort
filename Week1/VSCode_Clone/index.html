@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Studio Code - Code Editor</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+  <!-- <main> -->
+    <!-- <center> -->
+    <nav id="navbar">
+      <div id="container">
+        <div id="navbar-left" class="navbar-container-part">
+          <span id="logo" class="topLink" ><img src="https://code.visualstudio.com/favicon.ico" class="icon" /></span>
+          <span id="logo"  style="font-size: 18; font-weight: 550">Visual Studio Code</span>
+          <span class="topLink">Docs</span>
+          <span class="topLink">Updates</span>
+          <span class="topLink">Blog</span>
+          <span class="topLink">API</span>
+          <span class="topLink">Extensions</span>
+          <span class="topLink">FAQs</span>
+          <span class="topLink">GitHub Copilot</span>
+        </div>
+        <div id="navbar-right" class="navbar-conatiner-part">
+          <span>
+            <input type="text" placeholder="Search Docs" />
+          </span>
+          <span class="download-button">Download</span>
+        </div>
+      </div>
+    </nav>
+
+    <div id="homepage-body">
+
+      <div id="banner">
+        <a href="/">Version 1.95</a> is now available! Read about the new features and fixes from October.
+      </div>
+
+      <div id="VScode-intro">
+        <div id="tagline">Code faster with AI</div>
+        <div id="info">Visual Studio Code with GitHub Copilot supercharges your code with AI-powered suggestions, right in your editor. </div>
+  
+      </div>
+
+      <div id="VScode-download">
+        <div id="download-options">
+          <span class="download" id="debian-download">
+            <div class="download-upper">
+              <img class="download-icon" src="https://code.visualstudio.com/assets/icons/download.svg"/>
+              .deb
+            </div>
+            <div class="download-lower">
+              Debian, Ubuntu...
+            </div>
+          </span>
+          <span class="download" id="rpm-download">
+            <div class="download-upper">
+              <img class="download-icon" src="https://code.visualstudio.com/assets/icons/download.svg"/>
+              .rpm
+            </div>
+            <div class="download-lower">
+              Red Hat, Fedora...
+            </div>
+          </span>
+          <span id="try-github-copilot">
+            Try GitHub Copilot
+          </span>
+        </div>
+        <div id="other-downloads">
+          <a href="/">Web</a>, 
+          <a href="/">Insiders edition</a>, or
+          <a href="/">other platforms</a>
+        </div>
+
+        <div id="warning">
+          By using VS Code, you agree to its license and privacy statement.
+        </div>
+
+      </div>
+  
+
+
+      <div id="VScode-image">
+        <img src="https://code.visualstudio.com/assets/home/home-screenshot-copilot.png"/>
+      </div>
+
+
+
+
+      <div id="github-copilot">
+        <div class="copilot-details">
+          <span id="copilot-heading">Code with GitHub Copilot</span>
+          <span class="copilot-info">Write code faster and smarter with GitHub Copilot, your AI pair programmer.<a href="/"> GitHub Copilot free for 30 days </a></span>
+          <span class="copilot-info">
+            <a href="/">Completions</a> present suggestions automatically to help you code more efficiently.
+          </span>
+          <span class="copilot-info"><a href="/">Copilot</a> Chat understands the context of your code, workspace, extensions, settings, and more.</span>
+          <span class="copilot-info"><a href="/">Inline Chat</a> enables you to iteratively generate edits and get answers to quick questions, directly on your code.</span>
+        </div>
+        <div class="copilot-image">
+          <img src="https://code.visualstudio.com/assets/home/swimlane-copilot.png" alt="swimlane-copilot">
+        </div>
+      </div>
+      <div id="language-support">
+        <div class="languages-support-intro">
+          <h1>
+            Code in any language
+          </h1>
+          <span>
+            VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+          </span>
+        </div>
+        <div class="languages">
+          <div>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-js.png" >
+              JavaScript
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-cs.png">
+              C#
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-java.png" >
+              Java
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-markdown.png">
+              Markdown
+            </span>
+          </div>
+          <div>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-ts.png">
+              TypeScript
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-cpp.png">
+              C++
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-json.png">
+              JSON
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-powershell.png">
+              Powershell
+            </span>
+          </div>
+          <div>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-python.png" alt="">
+              Python
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-html.png" alt="">
+              HTML
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-php.png" alt="">
+              PHP
+            </span>
+            <span class="language-tab">
+              <img id="icon" src="https://code.visualstudio.com/assets/home/language-yaml.png" alt="">
+              YAML
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="extensions-support">
+        <div id="extensions-details">
+          <h1>Code with Extensions</h1>
+          <span>
+            Whether you're a beginner or an expert, we've got you covered. Choose from hundreds of extensions to power up your VS Code experience.
+          </span>
+          <a href="/">
+            Learn more about extensions 
+          </a>
+        </div>
+        <div id="extensions-tiles-container">
+          <div id="extensions">
+            <div class="extension-block">
+              <img id="icon" src="https://ms-python.gallerycdn.vsassets.io/extensions/ms-python/python/2024.21.2024112901/1732876718886/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>Python</h3>
+                <span>Adds rich language support for Python</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://github.gallerycdn.vsassets.io/extensions/github/copilot/1.246.1234/1732844124585/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>Github Copilot</h3>
+                <span>Your AI pair programmer</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://ms-vscode.gallerycdn.vsassets.io/extensions/ms-vscode/cpptools/1.23.1/1731033762556/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>C/C++</h3>
+                <span>Adds rich language support for C/C++</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://ms-toolsai.gallerycdn.vsassets.io/extensions/ms-toolsai/jupyter/2024.11.2024112701/1732701651121/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>Jupyter</h3>
+                <span>Language support for Jupyter Notebook</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://eamodio.gallerycdn.vsassets.io/extensions/eamodio/gitlens/2024.11.2804/1732785105955/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>GitLens</h3>
+                <span>Supercharge your Git experience</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://ms-dotnettools.gallerycdn.vsassets.io/extensions/ms-dotnettools/csdevkit/1.14.12/1732659020502/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>C# Dev Kit</h3>
+                <span>Powerful tools for your C# environment</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://github.gallerycdn.vsassets.io/extensions/github/codespaces/1.17.3/1726066722785/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>GitHub Codespaces</h3>
+                <span>Fully configured dev environments in the cloud</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://github.gallerycdn.vsassets.io/extensions/github/vscode-pull-request-github/0.101.2024112804/1732767439149/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>Github Pull Requests</h3>
+                <span>Collaborate on issues and pull requests</span>
+              </div>
+            </div>
+            <div class="extension-block">
+              <img id="icon" src="https://ms-vscode-remote.gallerycdn.vsassets.io/extensions/ms-vscode-remote/vscode-remote-extensionpack/0.26.0/1729778338986/Microsoft.VisualStudio.Services.Icons.Default" alt="">
+              <div>
+                <h3>Remote Development</h3>
+                <span>Open folders in a container on a remote machine</span>
+              </div>
+            </div>
+          </div>
+          <div id="extension-marketplace">
+            View 50k+ extensions in the 
+            <a href="/">Extension Marketplace</a>
+          </div>
+        </div>
+      </div> 
+      
+
+
+
+      <div id="customizable-row">
+        <div class="customizable-details">
+          <h1>Fully customizable</h1>
+          <span class="customizable-info">Customize your VS Code UI and layout so that it fits your coding style.</span>
+          <span class="customizable-info">
+            <a href="/">Color themes</a> let you modify the colors in VS Code's user interface to suit your preferences and work environment.
+          </span>
+          <span class="customizable-info"><a href="/">Settings Sync</a> enables you to share your user settings across your VS Code instances with the Settings Sync feature.</span>
+          <span class="customizable-info"><a href="/">Profiles</a> let you create sets of customizations and quickly switch between them or share them with others.</span>
+        </div>
+        <div class="VScode-customization-image">
+          <img src="https://code.visualstudio.com/assets/home/swimlane-customized.png" alt="swimlane-copilot">
+        </div>
+      </div>
+
+
+      <div id="code-anywhere-row">
+        <div class="code-anywhere-details">
+          <h1>Code anywhere</h1>
+          <span class="code-anywhere-info">Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in the browser with VS Code for the Web (vscode.dev).</span>
+          <span class="code-anywhere-info">
+            <a href="/">Built-in Source Control</a> empowers you with Git support out-of-the-box. Many other source control providers are available through extensions.
+          </span>
+          <span class="code-anywhere-info"><a href="/">Github Codespaces</a> provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</span>
+        </div>
+        <div class="code-anywhere-image">
+          <img src="https://code.visualstudio.com/assets/home/swimlane-anywhere.png" alt="swimlane-copilot">
+        </div>
+      </div>
+
+
+
+
+      <div id="VScode-features-row">
+        <div class="VScode-features-intro">
+          <h1>Code with rich features</h1>
+          <span>There's a lot more to an editor. Whether it's using built-in features or rich extensions, there's something for everyone.</span>
+        </div>
+        <div id="VScode-features">
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="">
+            </div>
+            <h3>Integrated terminal</h3>
+            <span>Use your favortie shell whether it's zsh, pwsh, or git bash, all inside the editor.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-debug.svg" alt="">
+            </div>
+            <h3>Run Code</h3>
+            <span>Run and debug your without leaving your editor.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-version-control.svg" alt="">
+            </div>
+            <h3>Version Control</h3>
+            <span>Built-in support for git and many other source countrol providers.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-build-tasks.svg" alt="">
+            </div>
+            <h3>Build tasks</h3>
+            <span>URun tools and analyze their results from within VS Code.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-local-history.svg" alt="">
+            </div>
+            <h3>Load history</h3>
+            <span>Never loose your changes with automatically tracked local history.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-themes.svg" alt="">
+            </div>
+            <h3>Themes</h3>
+            <span>Your theme is an extension of your personality. Add some flair to your editor and your touch.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-accessibility.svg" alt="">
+            </div>
+            <h3>Accessibility</h3>
+            <span>Optimize experience for screen readers, high contrast themes, and keyboard only navigation.</span>
+          </div>
+          <div class="VScode-features-tile">
+            <div><img class="features-icon" src="https://code.visualstudio.com/assets/icons/codicon-web.svg" alt="">
+            </div>
+            <h3>Web Support</h3>
+            <span>Whether you are on your phone, tablet, or desktop, you can access your code anywhere.</span>
+          </div>
+        </div>
+      </div>
+
+
+      <footer>
+        <div>
+          <span>
+            <img src="https://code.visualstudio.com/assets/icons/x-icon.svg" alt="">
+            <img src="https://code.visualstudio.com/assets/icons/github-icon.svg" alt="">
+            <img src="https://code.visualstudio.com/assets/icons/youtube-icon.svg" alt="">
+          </span>
+          <span>
+            <img src="https://code.visualstudio.com/assets/icons/microsoft.svg" alt="">
+          </span>
+        </div>
+        <div>
+          <ul>
+            <li>Support</li>
+            <li>Privacy</li>
+            <li>Terms of Use</li>
+            <li>License</li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+
+    
+
+    
+    <!-- </center> -->
+  <!-- </main> -->
+  </body>
+</html>

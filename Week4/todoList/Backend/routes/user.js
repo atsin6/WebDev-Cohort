@@ -23,6 +23,7 @@ router.post("/signup", async (req, res) => {
   users = readUsers();
   if (users.find((user) => user.email === email)) {
     res.status(409).json({ message: `${email} already exist.` });
+    return;
   }
 
   let username = userSignupData.email.split("@")[0];

@@ -1,0 +1,27 @@
+#navbar{
+    height: 8vh;
+    width: 100vw;
+    backdrop-filter: blur(15px);
+    background-color: rgba(91, 91, 91, 0.162);
+    box-shadow: 0 4px 30px  rgba(200, 200, 200, 0.75);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+}
+
+#title{
+    /* font-size: 20px; */
+    /* text-decoration: white wavy underline; */
+    text-align: center;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#signinBtn{
+    padding: 5px ;
+}

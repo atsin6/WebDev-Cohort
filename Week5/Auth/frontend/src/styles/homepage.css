@@ -17,9 +17,10 @@ html, body{
   --font1: #fcfcfc;
   --font2: #464646;
 
-  --fontsize1: 20px;
-  --fontsize2: 25px;
-  --fontsize3: 30px;
+  --fontsize1: 15px;
+  --fontsize2: 20px;
+  --fontsize3: 25px;
+  --fontsize4: 30px;
 }
 
 body {
@@ -39,9 +40,6 @@ body {
   height: 92vh;
   width: 100vw;
 
-  
-  
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,18 +49,3 @@ body {
 }
 
 
-@media (max-width: 750px ) {
-  .signupDiv{
-    width: 100vw;
-    height: auto;
-  }
-  :root{
-    --fontsize1: 15px;
-    --fontsize2: 20px;
-    --fontsize3: 25px;
-  }
-
-  .title{
-    font-size: 30px;
-  }
-}

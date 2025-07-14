@@ -1,3 +1,5 @@
+import { renderSignoutDiv } from "../components/signout";
+
 export async function showMessage(response) {
   const msg = response.message;
 
@@ -33,4 +35,12 @@ export function clearErrorMessagesHandler() {
   passwordInput?.addEventListener("input", () => {
     document.querySelector("#errMsgPassword").innerHTML = "";
   });
+}
+
+export async function signInDoneMsg() {
+  let homepage = document.querySelector("#homepage");
+  homepage.firstChild.replaceChildren();
+  homepage.firstChild.innerHTML = "You have successfully signed in!";
+
+  renderSignoutDiv();
 }

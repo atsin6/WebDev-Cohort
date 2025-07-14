@@ -1,4 +1,4 @@
-.signupDiv{
+.authDiv{
   height: auto;
   width: 40vw;
 
@@ -16,6 +16,11 @@
 a{
     color:rgba(0, 0, 0, 0.86);
     font-weight: 900;
+    cursor: pointer;
+}
+
+.active-link{
+  color: rgba(203, 127, 64, 0.914);
 }
 
 /* .signupDiv:hover{
@@ -38,7 +43,7 @@ a{
 }
 
 .label{
-  font-size: var(--fontsize2);
+  font-size: var(--fontsize3);
 }
 
 .input{
@@ -85,6 +90,7 @@ a{
 
 
 .btn{
+  font-size: var(--fontsize2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
 
@@ -99,4 +105,23 @@ a{
 
 .btn:hover{
   box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.3);  
+}
+
+#signinOption{
+  padding: 0 0 0 2px;
+}
+
+
+@media (max-width: 750px ) {
+  .authDiv{
+    width: 80vw;
+    height: auto;
+  }
+  .title{
+    font-size: var(--fontsize4);
+  }
+
+  .label{
+    font-size: var(--fontsize3);
+  }
 }

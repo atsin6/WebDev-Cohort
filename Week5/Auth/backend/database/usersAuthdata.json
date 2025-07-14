@@ -40,5 +40,19 @@
     "password": "$2b$10$2UeMdAUAFy87FFi/oKBdhOnOoHZXutzM7Sw.vXFmi.OvA7g7QNWAi",
     "username": "Harkirat",
     "id": "MJJithwLcGPW_KGEGd_RJ"
+  },
+  {
+    "name": "sdfsf",
+    "email": "sdfsdsafsdf",
+    "password": "$2b$10$Dut8AtSRHcNC8dNwIJqFse7HVzrl.A4csDVwX618.oB4hJkCssvce",
+    "username": "sdfsdsafsdf",
+    "id": "qeBaVLhBmH-RNMDBDYGdH"
+  },
+  {
+    "name": "Ritik",
+    "email": "ritik@atsin.com",
+    "password": "$2b$10$q.ifZZ6k16w.FDtjYuzq1uwJxN0Iimv.S5W4byKZK.hDQZkL.R0d2",
+    "username": "ritik",
+    "id": "9bLhYqZJt79WQVd1-Gjys"
   }
 ]

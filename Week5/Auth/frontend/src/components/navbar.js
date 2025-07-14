@@ -6,13 +6,7 @@ export function renderNavbar() {
   title.id = "title";
 
   let navigation = document.createElement("div");
-  let signinBtn = document.createElement("btn");
-  signinBtn.textContent = "Sign In";
-  signinBtn.className = "btn";
-  signinBtn.type = "button";
-  signinBtn.id = "signinBtn";
-
-  navigation.append(signinBtn);
+  navigation.id = "navigation";
 
   navbar.append(title, navigation);
   return navbar;

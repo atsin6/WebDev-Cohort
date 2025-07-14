@@ -1,6 +1,8 @@
+import { goToSigninPage } from "../handlers/signinHandler";
+
 export function renderSignupDiv() {
   const signupDiv = document.createElement("div");
-  signupDiv.className = "signupDiv";
+  signupDiv.className = "authDiv";
 
   const title = document.createElement("h1");
   title.innerHTML = "SignUp";
@@ -69,9 +71,13 @@ export function renderSignupDiv() {
   signupBtn.addEventListener("click", (event) => {});
 
   const signinOption = document.createElement("div");
-  //   const siginLink = document.createElement("a");
+  signinOption.id = "signinOption";
+  signinOption.innerHTML = "Already have an account? ";
+  const signinLink = document.createElement("a");
+  signinLink.innerHTML = "Sign In";
+  signinLink.id = "signinLink";
 
-  signinOption.innerHTML = "Already have an account? <a> Sign In </a>";
+  signinOption.append(signinLink);
 
   signupForm.append(
     nameLabel,
@@ -86,6 +92,8 @@ export function renderSignupDiv() {
     signupBtn,
     signinOption
   );
+
+  goToSigninPage(signinLink);
 
   signupDiv.append(title, signupForm);
 

@@ -1,18 +1,16 @@
+import { signInDoneMsg, showMessage } from "../util/uiHandler";
 import { handleServerResponse, handleClientError } from "../util/errorHandler";
-import { showMessage, signUpDoneMsg } from "../util/uiHandler";
 
-export async function handleSignupSubmit(form) {
+export async function handleSigninSubmit(form) {
   form.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Prevent default form submission
-
-    console.log(form);
+    event.preventDefault();
 
     const formData = new FormData(form);
-    const formDataObject = Object.fromEntries(formData); // converted into JS
-    const formDataStringify = JSON.stringify(formDataObject); // conveted into JSON
+    const formDataObject = Object.fromEntries(formData);
+    const formDataStringify = JSON.stringify(formDataObject);
 
     try {
-      const response = await fetch("http://localhost:3000/signup", {
+      const response = await fetch("http://localhost:3000/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -21,8 +19,8 @@ export async function handleSignupSubmit(form) {
       });
 
       if (response.ok) {
-        signUpDoneMsg();
-        console.log("Form submitted successfully!");
+        signInDoneMsg();
+        console.log("Signin form submission successful");
       } else {
         const errData = await handleServerResponse(response);
         showMessage(errData);

@@ -1,6 +1,4 @@
-import bcrypt from "bcrypt";
 import { getUsersData } from "../database/usersAuthdata.js";
-import { isSessionExist } from "../../../../Week4/todoList/Backend/utils/session.js";
 
 export function validateSignupData(req, res, next) {
   let signupData = req.body;

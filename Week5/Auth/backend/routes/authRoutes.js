@@ -36,6 +36,8 @@ router.post("/signup", validateSignupData, async (req, res) => {
     console.error(`Error hashing password`);
     res.status(500).json({ message: `Server Error` });
   }
+
+  res.json;
 });
 
 router.post("/signin", validateSigninData, async (req, res) => {

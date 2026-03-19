@@ -26,9 +26,10 @@ const Navbar = () => {
     return (
         <nav id='nav'>
             <div id='imgAndSearchDiv'>
-            <img id='LinkedInLogo' src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt="LinkedIn" />
+                <img id='LinkedInLogo' src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt="LinkedIn" />
             
             </div>
+            
             <div className='navigationMenu'>
                 <div className='navOption'>
                     <img className='icons' src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="Home" />

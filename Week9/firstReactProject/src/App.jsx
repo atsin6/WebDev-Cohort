@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { PostComponent } from './Post'
+import { PostComponent } from '../Componenets/Post/Post.jsx'
 import './App.css'
 import Navbar from '../Componenets/Navbar/Navbar.jsx';
 

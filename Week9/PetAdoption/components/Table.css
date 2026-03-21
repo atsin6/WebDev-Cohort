@@ -1,0 +1,81 @@
+.table-panel {
+  padding: 1.35rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 235, 206, 0.25);
+  background: linear-gradient(165deg, rgba(76, 36, 15, 0.78), rgba(39, 20, 9, 0.8));
+  box-shadow: 0 24px 44px rgba(17, 8, 3, 0.28);
+}
+
+.table-heading {
+  margin-bottom: 0.9rem;
+}
+
+.table-eyebrow {
+  margin: 0 0 0.35rem;
+  color: #ffd7a2;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.74rem;
+}
+
+.table-heading h2 {
+  margin: 0;
+  color: #fff7ec;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+}
+
+.table-heading p {
+  margin-top: 0.4rem;
+  color: rgba(255, 237, 210, 0.86);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 228, 184, 0.2);
+}
+
+.table-wrap table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+}
+
+.table-wrap thead {
+  background: rgba(255, 219, 162, 0.18);
+}
+
+.table-wrap th,
+.table-wrap td {
+  text-align: left;
+  padding: 0.92rem 1rem;
+}
+
+.table-wrap th {
+  color: #ffe6be;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table-wrap td {
+  color: #fff8ee;
+  border-top: 1px solid rgba(255, 228, 184, 0.16);
+}
+
+.table-wrap tbody tr:nth-child(even) {
+  background: rgba(255, 242, 216, 0.05);
+}
+
+.table-wrap tbody tr:hover {
+  background: rgba(255, 202, 129, 0.12);
+}
+
+.empty-state {
+  text-align: center;
+  font-style: italic;
+  color: rgba(255, 240, 217, 0.88);
+}

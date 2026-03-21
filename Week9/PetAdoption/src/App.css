@@ -1,0 +1,69 @@
+.app-shell {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-shell::before,
+.app-shell::after {
+  content: "";
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(2px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.app-shell::before {
+  width: 320px;
+  height: 320px;
+  left: -70px;
+  top: -100px;
+  background: radial-gradient(circle, rgba(255, 202, 132, 0.35), rgba(255, 202, 132, 0));
+}
+
+.app-shell::after {
+  width: 300px;
+  height: 300px;
+  right: -60px;
+  bottom: -100px;
+  background: radial-gradient(circle, rgba(181, 104, 59, 0.32), rgba(181, 104, 59, 0));
+}
+
+.app-main {
+  position: relative;
+  z-index: 1;
+  width: min(1140px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.4rem 0 2.5rem;
+  display: grid;
+  grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.form-column,
+.table-column {
+  animation: rise-in 500ms ease both;
+}
+
+.table-column {
+  animation-delay: 120ms;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+}

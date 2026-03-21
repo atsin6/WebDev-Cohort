@@ -1,0 +1,37 @@
+:root {
+  --cream-050: #fffaf1;
+  --cream-100: #fdeed9;
+  --earth-400: #cb7b3a;
+  --earth-600: #8b4923;
+  --earth-800: #4d240f;
+  --ink-800: #2a180f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  color: var(--cream-050);
+  font-family: "Trebuchet MS", "Avenir Next", "Lucida Sans", sans-serif;
+  background:
+    linear-gradient(120deg, rgba(21, 11, 5, 0.76), rgba(12, 8, 6, 0.62)),
+    url("./assets/pexels-snapwire-46024.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button,
+input {
+  font: inherit;
+}

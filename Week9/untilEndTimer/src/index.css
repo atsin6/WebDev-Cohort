@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /* 
+      This is about how fonts are **rendered on screen**.
+      creens are made of pixels. Diagonal and curved letter edges don't align perfectly to a pixel grid — they look jagged without smoothing.
+      Antialiasing blends the edges slightly to look smoother: 
+    */
+    -moz-osx-font-smoothing: grayscale;
+
+    color: #e2e8f0;           /* default text color — light for dark theme */
+    background: #0f0f1a;      /* matches App.css so no flash of white */
+}
+button, input {
+    font-family: inherit;
+    font-size: inherit;
+}

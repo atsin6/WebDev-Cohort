@@ -1,0 +1,81 @@
+#app-shell {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0f0f1a;
+}
+
+/*
+  The outer card wraps everything.
+  No flex-direction needed on app-shell anymore —
+  the card itself handles the vertical stacking inside.
+*/
+
+#card {
+    background: #1a1a2e;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+    flex-direction: column;    /* tabs on top, content below */
+    overflow: hidden;          /* clips tab-bar to card's border-radius */
+}
+
+/*
+  Tab bar sits at the very top of the card.
+  A subtle bottom border separates it from the content.
+  No gap between buttons — they fill the bar edge to edge.
+*/
+
+#tab-bar {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/*
+  Each tab takes equal space — flex: 1 splits the bar 50/50.
+  No border-radius on individual tabs — they sit flush.
+  The active indicator is a bottom border, not a background pill.
+  This feels more "integrated" than a floating pill switcher.
+*/
+
+.tab-btn {
+    flex: 1;                   /* each tab takes half the bar */
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid transparent;    /* placeholder — filled when active */
+    background: transparent;
+    color: #4a5568;            /* dim — inactive */
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: #94a3b8;            /* brighten slightly on hover */
+}
+
+/*
+  Active tab gets a bright bottom border — acts as an underline indicator.
+  Text brightens to full white.
+  This is the most common tab pattern in professional UIs.
+*/
+
+.tab-btn.active {
+    color: #e2e8f0;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/*
+  Content area just adds padding around whichever component is showing.
+  The Stopwatch and Timer components don't need their own outer padding anymore.
+*/
+
+#tab-content {
+    padding: 2rem;
+}
